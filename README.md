@@ -108,9 +108,3 @@ Kevin Camilo Delgado Restrepo
 💼 Desarrollador de Software
 📍 Colombia
 
-
-
-
-
-
-Readme.md English
