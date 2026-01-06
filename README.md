@@ -1,43 +1,109 @@
-<img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/a69122a4-85e2-44ff-a8c3-b3374a2b6a3a" />  Sistema de Programador de Turnos el cual fue dirigido especificamente a la compañia de Doria 
+📘 README.md (Español)
+🗓️ Sistema de Programador de Turnos – Doria
+Plataforma Empresarial de Gestión de Turnos
+<p align="center"> <img width="140" src="https://github.com/user-attachments/assets/a69122a4-85e2-44ff-a8c3-b3374a2b6a3a" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Estado-Producción-success?style=flat-square" /> <img src="https://img.shields.io/badge/Tipo-Proyecto%20Empresarial-blue?style=flat-square" /> <img src="https://img.shields.io/badge/Plataforma-Web-lightgrey?style=flat-square" /> <img src="https://img.shields.io/badge/Licencia-Privada-red?style=flat-square" /> </p>
+🧠 Descripción General
 
-<img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/0846455d-61ed-4d02-b5ae-624b3531aaca" />  Aplicativo de unificacion de turnos para todas las areas, el cual se encarga de que cada jefe de su propia area pueda programar a sus empleados expesificamente de su proceso. En exception a unos jefes que tengan acceso a todas las areas, estos mismos podran programar turnos a cuaqluier empleado de cualquier area, ya que tienen acceso a todos las areas. Esto busca un orden y una unificación para que sea más facil tanto paro los jefes como los empleados tener un orden para visualizar y programar.
+El Sistema de Programador de Turnos es una aplicación web empresarial desarrollada para la compañía Doria, enfocada en centralizar, organizar y optimizar la programación de turnos en todas las áreas de la empresa.
 
-Caracteristicas principales del proyecto:
+El sistema mejora el control operativo, la visibilidad y la comunicación entre jefes de área y empleados, garantizando un manejo claro y ordenado de los turnos.
 
-Apartado Empleados, visualizacion de cosas especificas por su rol:
+🎯 Problema que resuelve
 
-* Header: Inicio, Buscar, Contacto, Inicir Sesión 
+Los procesos tradicionales de programación de turnos suelen presentar:
 
-* Iniciar Sesion: Correo, Contraseña, Entrar.
+❌ Información descentralizada
 
-* Body:
+❌ Errores manuales
 
-* Consulta tus TURNOS: Busqueda por nombre o por documento, botón Buscar Turnos. text (/p) Por favor, introduce un nombre o documento para buscar turnos. Este apartado es donde los empleados podran consultar el turno en que su jefe lo a programado, ya sea semanal, Rango o Anual, podra ver su turno dependientemente del turno que se le haya asignado de Lunes a Domingo, con un apartado de tipo calendario tambipen viendo los comentarios que se le asignaron para el turno
+❌ Falta de visibilidad de turnos
 
-* Apartado (Modal) "MOSTRAR BRIGADISTAS": Una vez que se precione el boton se podra visualizar a los brigadistas que esten en turno, para poder localizarlos más facil y saber quienes estan en mi turno, en lo cual se va a poder visualizar: Nombre, Proceso. Alturas/Confinados, Telefono, Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo
+❌ Poca segmentación por roles
 
-* Seccion oculta para empleados (Primera Pagina): Bienvenido al Sistema de Turnos. Para acceder a la programación y gestión de turnos, por favor inicia sesión con tus credenciales corporativas.
+✅ Solución
 
-* Calendario: Calendario para ubicar la fecha en la que estamos, señalando el día en el que estamos
+Un sistema centralizado, seguro e intuitivo que:
 
-* Contacto: Boton de contactar para los usuaruios que tengan preguntas de como manejar el software o solicitudes. 
+Implementa control de acceso por roles
 
-<img width="25" height="25" alt="image" src="https://github.com/user-attachments/assets/e0dcb818-ac5c-4e20-b698-e3dcfb636e3b" /> Apartado para Jefes:
+Unifica la programación de turnos
 
-* Header: Inicio, Buscar, Contacto (Correo) Cerrar Sesión:
+Facilita la consulta para empleados
 
-* Body:
+Optimiza la gestión administrativa
 
-* Ver turnos programados. Este modal premite ver todos los turnos programados de los empleados d ecada area, buscando por areas, este mismo se puede descargar en PDF, con su seccion para colocar la fima
+✨ Funcionalidades Principales
+👷 Empleados
 
-* Apartado (Modal) "MOSTRAR BRIGADISTAS": Una vez que se precione el boton se podra visualizar a los brigadistas que esten en turno, para poder localizarlos más facil y saber quienes estan en mi turno, en lo cual se va a poder visualizar: Nombre, Proceso. Alturas/Confinados, Telefono, Lunes, Martes, Miercoles, Jueves, Viernes, Sabado, Domingo
+🔐 Inicio de sesión con credenciales corporativas
 
-* Apartado Principal PROGRAMAR TURNOS: B
+🔍 Consulta de turnos por nombre o documento
 
+📆 Visualización:
 
+Semanal
 
+Por rango de fechas
 
+Anual
 
+🗓️ Vista tipo calendario
 
+💬 Comentarios asignados por el jefe
 
- 
+🚨 Consulta de brigadistas en turno
+
+🧑‍💼 Jefes de Área
+
+📑 Visualización de turnos por área
+
+📄 Exportación a PDF con espacio para firma
+
+🧠 Programación de turnos con validación por rol
+
+✏️ Gestión completa:
+
+Crear
+
+Editar
+
+Eliminar
+
+🔄 Visualización del turno más reciente
+
+🚨 Control de brigadistas activos
+
+🧩 Roles y Permisos
+Rol	Permisos
+👷 Empleado	Consulta de turnos
+🧑‍💼 Jefe	Programación de su área
+🧠 Acceso Completo	Gestión global
+🛠️ Stack Tecnológico
+
+Frontend: HTML, CSS, JavaScript
+
+UI: Bootstrap + CSS personalizado
+
+Backend: Google Apps Script
+
+Base de datos: Google Sheets
+
+Reportes: Exportación a PDF
+
+📈 Impacto en el Negocio
+
+✔️ Reducción de errores
+✔️ Mayor control operativo
+✔️ Mejor comunicación interna
+✔️ Ahorro de tiempo
+✔️ Escalable y mantenible
+
+🏁 Conclusión
+
+Proyecto desarrollado con un enfoque real en procesos empresariales, priorizando la claridad, la seguridad y la eficiencia operativa.
+
+👤 Autor
+
+Kevin Camilo Delgado Restrepo
+💼 Desarrollador de Software
+📍 Colombia
