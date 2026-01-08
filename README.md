@@ -1,110 +1,150 @@
-📘 README.md (Español)
-🗓️ Sistema de Programador de Turnos – Doria
-Plataforma Empresarial de Gestión de Turnos
-<p align="center"> <img width="140" src="https://github.com/user-attachments/assets/a69122a4-85e2-44ff-a8c3-b3374a2b6a3a" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Estado-Producción-success?style=flat-square" /> <img src="https://img.shields.io/badge/Tipo-Proyecto%20Empresarial-blue?style=flat-square" /> <img src="https://img.shields.io/badge/Plataforma-Web-lightgrey?style=flat-square" /> <img src="https://img.shields.io/badge/Licencia-Privada-red?style=flat-square" /> </p>
-🧠 Descripción General
+# Programador de Turnos 📅
 
-El Sistema de Programador de Turnos es una aplicación web empresarial desarrollada para la compañía Doria, enfocada en centralizar, organizar y optimizar la programación de turnos en todas las áreas de la empresa.
+Sistema web de programación y gestión de turnos para empleados (especificamente para la compañia Doria), integrado con Google Sheets para almacenamiento centralizado de datos.
 
-El sistema mejora el control operativo, la visibilidad y la comunicación entre jefes de área y empleados, garantizando un manejo claro y ordenado de los turnos.
+## Características ✨
 
-🎯 Problema que resuelve
+- **Autenticación segura**: Sistema de login con validación de credenciales
+- **Gestión de turnos**: Programa turnos para empleados (T1, T2, T3 y variantes con extras)
+- **Cálculo automático de horas**: Calcula automáticamente las horas trabajadas por semana
+- **Integración con Google Sheets**: Sincronización de datos con hojas de cálculo de Google
+- **Interfaz moderna**: Diseño responsivo con gradientes y efectos visuales
+- **Buscar y contacto**: Secciones dedicadas para búsquedas y contacto
 
-Los procesos tradicionales de programación de turnos suelen presentar:
+## Tecnologías utilizadas 🛠️
 
-❌ Información descentralizada
+- **Frontend**: HTML5, CSS3, JavaScript vanilla
+- **Backend**: Google Apps Script (GAS)
+- **Almacenamiento**: Google Sheets
+- **Fonts**: Google Fonts (Urbanist, Lato, Open Sans)
+- **Iconos**: Material Symbols Outlined
 
-❌ Errores manuales
+## Estructura de turnos 🔄
 
-❌ Falta de visibilidad de turnos
+El sistema soporta los siguientes tipos de turnos:
 
-❌ Poca segmentación por roles
+| Turno | Lunes | Martes | Miércoles | Jueves | Viernes | Sábado | Domingo | Total Horas |
+|-------|-------|--------|-----------|--------|---------|--------|---------|-------------|
+| T1 | 6.5 | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 0 | 44 |
+| T2 | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 6.5 | 0 | 44 |
+| T3 | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 0 | 0 | 37.5 |
+| T1 EXTRA | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 8 | 53 |
+| T2 EXTRA | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 8 | 8 | 53.5 |
+| T3 EXTRA | 7.5 | 7.5 | 7.5 | 7.5 | 7.5 | 8 | 8 | 53.5 |
 
-✅ Solución
+## Archivos del proyecto 📁
 
-Un sistema centralizado, seguro e intuitivo que:
+```
+Programador de Turnos/
+├── index.html          # Interfaz principal
+├── CodigoGs.js         # Scripts de Google Apps Script (backend)
+├── style.css           # Estilos CSS
+└── README.md           # Este archivo
+```
 
-Implementa control de acceso por roles
+## Instalación y despliegue 🚀
 
-Unifica la programación de turnos
+### Requisitos previos
+- Cuenta de Google
+- Google Sheets con datos de usuarios y empleados
+- Acceso a Google Apps Script
 
-Facilita la consulta para empleados
+### Pasos de instalación
 
-Optimiza la gestión administrativa
+1. **Crear un proyecto de Apps Script**
+   - Ve a [Google Apps Script](https://script.google.com)
+   - Crea un nuevo proyecto
 
-✨ Funcionalidades Principales
-👷 Empleados
+2. **Configurar los IDs de hojas**
+   - En `CodigoGs.js`, actualiza las constantes con tus IDs de Google Sheets:
+   ```javascript
+   const USERS_SHEET_ID = 'tu_id_aqui';
+   const EMPLOYEES_SHEET_ID = 'tu_id_aqui';
+   const BRIGADAS_DORIA_SHEET_ID = 'tu_id_aqui';
+   ```
 
-🔐 Inicio de sesión con credenciales corporativas
+3. **Subir archivos**
+   - Copia el contenido de `index.html` a un archivo HTML en Apps Script
+   - Copia el contenido de `CodigoGs.js` al archivo `.gs` principal
+   - Copia el contenido de `style.css` a un archivo CSS en Apps Script
 
-🔍 Consulta de turnos por nombre o documento
+4. **Desplegar como aplicación web**
+   - Click en "Implementar" → "Nueva implementación"
+   - Tipo: "Aplicación web"
+   - Ejecutar como: Tu cuenta de Google
+   - Acceso: "Cualquiera que tenga el enlace"
 
-📆 Visualización:
+5. **Obtener el enlace público**
+   - Copia la URL de despliegue
 
-Semanal
+## Estructura de datos de Google Sheets 📊
 
-Por rango de fechas
+### Hoja de Usuarios (`usuario`)
+| Email | Contraseña | Cargo |
+|-------|-----------|-------|
+| usuario@email.com | contraseña | Gerente |
 
-Anual
+### Hoja de Empleados
+- Contiene datos de empleados y asignaciones de turnos semanales
 
-🗓️ Vista tipo calendario
+## Uso 📖
 
-💬 Comentarios asignados por el jefe
+1. **Acceder a la aplicación**
+   - Abre la URL del despliegue en tu navegador
 
-🚨 Consulta de brigadistas en turno
+2. **Iniciar sesión**
+   - Ingresa tu email y contraseña registrados
+   - El sistema validará tus credenciales contra Google Sheets
 
-🧑‍💼 Jefes de Área
+3. **Gestionar turnos**
+   - Busca empleados
+   - Asigna turnos según las necesidades
+   - El sistema calcula automáticamente las horas
 
-📑 Visualización de turnos por área
+4. **Contacto**
+   - Utiliza la sección de contacto para consultas
 
-📄 Exportación a PDF con espacio para firma
+## Características de seguridad 🔒
 
-🧠 Programación de turnos con validación por rol
+- Validación de credenciales contra Google Sheets
+- Autenticación basada en email y contraseña
+- Roles de usuario con diferentes permisos
 
-✏️ Gestión completa:
+## Funciones principales 🔧
 
-Crear
+### `verificarCredenciales(correo, clave)`
+Valida el login del usuario
 
-Editar
+### `obtenerInfoUsuario(email)`
+Obtiene información del perfil del usuario
 
-Eliminar
+### `obtenerEmpleados()`
+Recupera lista de empleados
 
-🔄 Visualización del turno más reciente
+### `asignarTurno(empleadoId, turno, semana)`
+Asigna turno a un empleado
 
-🚨 Control de brigadistas activos
+## Personalización 🎨
 
-🧩 Roles y Permisos
-Rol	Permisos
-👷 Empleado	Consulta de turnos
-🧑‍💼 Jefe	Programación de su área
-🧠 Acceso Completo	Gestión global
-🛠️ Stack Tecnológico
+- Colores: Edita las variables CSS en `style.css` (azul oscuro, blanco)
+- Logo: Actualiza la URL en la sección de header de `index.html`
+- Fuentes: Modifica las importaciones de Google Fonts en `<head>`
 
-Frontend: HTML, CSS, JavaScript
+## Notas importantes ⚠️
 
-UI: Bootstrap + CSS personalizado
+- El proyecto requiere conexión a internet para funcionar
+- Los datos se sincronizan en tiempo real con Google Sheets
+- Asegúrate de tener los permisos necesarios en las hojas de cálculo
+- Guarda regularmente respaldos de tus datos en Google Sheets
 
-Backend: Google Apps Script
+## Soporte 📞
 
-Base de datos: Google Sheets
+Para reportar bugs o sugerir mejoras, contactar con siendokevi@gmail.com  3144110953 Kevin Camilo Delgado R. 
 
-Reportes: Exportación a PDF
+## Licencia 📄
 
-📈 Impacto en el Negocio
+Este proyecto es propiedad de KEVIN CAMILO DELGADO RESTREPO. Todos los derechos reservados.
 
-✔️ Reducción de errores
-✔️ Mayor control operativo
-✔️ Mejor comunicación interna
-✔️ Ahorro de tiempo
-✔️ Escalable y mantenible
+---
 
-🏁 Conclusión
-
-Proyecto desarrollado con un enfoque real en procesos empresariales, priorizando la claridad, la seguridad y la eficiencia operativa.
-
-👤 Autor
-
-Kevin Camilo Delgado Restrepo
-💼 Desarrollador de Software
-📍 Colombia
-
+**Última actualización**: Diciembre 2026
