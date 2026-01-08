@@ -139,7 +139,7 @@ Asigna turno a un empleado
 
 ## Soporte 📞
 
-Para reportar bugs o sugerir mejoras, contactar con siendokevi@gmail.com  3144110953 Kevin Camilo Delgado R. 
+Para reportar bugs o sugerir mejoras, contactar con:  siendokevi@gmail.com       📞3144110953        Kevin Camilo Delgado R. 
 
 ## Licencia 📄
 
